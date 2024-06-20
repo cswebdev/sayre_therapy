@@ -20,7 +20,7 @@ const UnderConstruction = () => {
                </p>
                <div className="social-bar">
                   <a href="https://www.psychologytoday.com/us/therapists/megan-sayre-libertyville-il/240981">
-                     <div className="btn btn-primary">Book an Appointment</div>
+                     <div className="btn btn-primary">book an appointment</div>
                   </a>
                </div>
             </div>
