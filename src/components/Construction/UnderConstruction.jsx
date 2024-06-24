@@ -4,6 +4,20 @@ const UnderConstruction = () => {
    return (
       <>
          <div className="Container construction-container">
+            <div class="area">
+               <ul class="circles">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+               </ul>
+            </div>
             <div className="text-container">
                <h1 className="bg">
                   We are making

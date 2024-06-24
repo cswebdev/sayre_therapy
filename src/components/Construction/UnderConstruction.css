@@ -1,7 +1,6 @@
-.construction-container {
+/* .construction-container {
     height: 100vh;
     width: 100vw;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,11 +8,15 @@
     text-align: start;
     position: relative;
 
-}
+} */
 
 :root {
     --size: 150px;
 
+}
+
+:root {
+    --size: 150px;
 }
 
 .construction-container {
@@ -24,27 +27,57 @@
 }
 
 span {
-    background: linear-gradient(-45deg,
-            #6276e6 25%,
-            #33eb23 25%,
-            #33eb23 50%,
-            #6276e6 50%,
-            #6276e6 75%,
-            #33eb23 75%,
-            #33eb23);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: var(--size) var(--size);
-    background-position: 0 0;
-    animation: stripes 25s linear infinite;
-    background-position: -10em 3em;
+    animation: color-animation 8s linear infinite;
 }
 
-@keyframes stripes {
+span {
+    --color-1: #91b4f0;
+    /* Light Blue */
+    --color-2: #f4cc3d;
+    /* Lighter Blue */
+    --color-3: #ff989e;
+    /* Pale Blue */
+
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-2)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-3)
+    }
+
     100% {
-        background-position: var(--size) 0, var(--size) 0, var(--size)s 0;
+        color: var(--color-1)
     }
 }
+
+.construction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
 
 .text-container {
     display: flex;
@@ -57,7 +90,7 @@ span {
     font-family: 'Poppins', sans-serif;
     position: relative;
     height: 40rem;
-    box-shadow: 0 0 0 8px #6276e6, -35px 35px 0px 0px #fff826;
+    box-shadow: 0 0 0 8px #6276e6, -35px 35px 0px 0px #ffd336;
     position: absolute;
 }
 
@@ -151,8 +184,6 @@ p,
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
     width: 100%;
     height: 100vh;
-
-
 }
 
 .circles {
@@ -268,4 +299,92 @@ p,
         border-radius: 50%;
     }
 
+}
+
+@media (max-width: 1010px) {
+
+    div.text-container {
+        min-width: 90vw !important;
+        min-height: 75vh !important;
+    }
+
+    h1 {
+        font-size: 5.4rem !important;
+    }
+
+}
+
+@media (max-width: 862px) {
+
+    div.text-container {
+        min-width: 90vw !important;
+        min-height: 78vh !important;
+    }
+    h1 {
+        font-size: 5rem !important;
+        letter-spacing: .05rem;
+    }
+
+}
+
+@media (max-width: 805px) {    
+    div.text-container {
+        min-width: 90vw !important;
+        min-height: 78vh !important;
+        box-shadow: 0 0 0 8px #6276e6, -15px 35px 0px 0px #ffd336;
+
+    }
+    h1 {
+        font-size: 4.6rem !important;
+    }
+}
+
+@media (max-width: 713px) {
+    h1 {
+        font-size: 3.6rem !important;
+        line-height: 7.9rem !important;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 571px) {
+    div.text-container {
+        min-width: 90vw !important;
+        min-height: 78vh !important;
+        box-shadow: 0 0 0 8px #6276e6, 0px 55px 0px 0px #ffd336;
+
+    }
+    h1 {
+        font-size: 3.3rem !important;
+        line-height: 7.5rem !important;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 529px) {
+    h1 {
+        font-size: 3.0rem !important;
+        line-height: 7.5rem !important;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width: 489px) {
+    h1 {
+        font-size: 2.8rem !important;
+        line-height: 4.5rem !important;
+    }
+
+    h2 {
+        font-size: 1.6rem !important;
+    }
 }
