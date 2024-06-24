@@ -8,7 +8,7 @@ const UnderConstruction = () => {
                <h1 className="bg">
                   We are making
                   <br />
-                  some upgrades
+                  some <span>upgrades</span>
                   <br />
                   to our website!
                </h1>
